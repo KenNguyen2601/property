@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #dae4ff;
+    padding-left: 6%;
+    padding-right: 6%;
+    nav {
+        width: 100%;
+        padding: 40px 0;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.logo {
+    flex: 1;
+    img {
+        width: 170px;
+        cursor: pointer;
+    }
+}
+
+.button {
+    font-family: 'Poppin', sans-serif;
+    padding: 14px 25px;
+    border: 0;
+    outline: none;
+    border-radius: 25px;
+    background: #333;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-icon {
+    width: 50px;
+    margin-left: 30px;
+    border-radius: 50px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    height: 470px;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.col-1,
+.col-2 {
+    flex-basis: 50%;
+    overflow: hidden;
+}
+
+.col-2 img {
+    width: 100%;
+}
+
+.col-1 {
+    padding: 8% 5%;
+    position: relative;
+}
+
+.col-1 h1 {
+    font-family: 'Poppin', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #333;
+    line-height: 60px;
+    letter-spacing: 2px;
+}
+
+.col-1 p {
+    font-family: 'Poppin', sans-serif;
+    color: #777;
+    line-height: 22px;
+    margin: 15px 0 30px;
+}
+
+ul {
+    position: absolute;
+    bottom: 30px;
+}
+
+ul li {
+    list-style: none;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: #bfbfbf;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+ul .active {
+    background: #333;
+}
+
+@keyframes zoomit {
+    0% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.zoom {
+    animation: zoomit 0.5s linear 1;
+}
